@@ -74,7 +74,7 @@ new Vue({
 #### scroll-tab Prop
 | Prop  | Default  | Type | Description |
 | :------------ |:---------------:| :---------------:| :-----|
-| horizontal | true | `bool` | If `true`, the scroll view's children are arranged horizontally in a row instead of vertically in a column. |
+| current-select | 0 | `number` | 控制切换到某个scroll-tab-col页 |
 | loop | true | `bool` | Set to `false` to disable continuous loop mode. |
 | index | 0 | `number` | Index number of initial slide. |
 | showsButtons | false | `bool` | Set to `true` make control buttons visible. |
