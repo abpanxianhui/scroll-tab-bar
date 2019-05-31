@@ -25,8 +25,8 @@ new Vue({
 
 ```
 
-#### 使用
-
+### 使用
+ 
 ```
 <template>
     <div id="app" ref="li">
@@ -68,3 +68,17 @@ new Vue({
 </script>
 
 ```
+
+### 组件参数
+
+#### scroll-tab Prop
+| Prop  | Default  | Type | Description |
+| :------------ |:---------------:| :---------------:| :-----|
+| horizontal | true | `bool` | If `true`, the scroll view's children are arranged horizontally in a row instead of vertically in a column. |
+| loop | true | `bool` | Set to `false` to disable continuous loop mode. |
+| index | 0 | `number` | Index number of initial slide. |
+| showsButtons | false | `bool` | Set to `true` make control buttons visible. |
+| autoplay | false | `bool` | Set to `true` enable auto play mode. |
+| onIndexChanged | (index) => null | `func` | Called with the new index when the user swiped |
+
+
