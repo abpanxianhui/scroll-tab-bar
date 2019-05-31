@@ -1,5 +1,5 @@
 {
-  "name": "scroll-tab",
+  "name": "scroll-tab-bar",
   "version": "0.0.1",
   "description": "移动端滑动切换菜单栏",
   "main": "lib/index.js",
@@ -14,9 +14,6 @@
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": ""
-  },
   "homepage": "",
   "devDependencies": {
     "@babel/core": "^7.2.2",
@@ -46,5 +43,9 @@
     "babel-polyfill": "^6.26.0",
     "vue": "^2.5.22",
     "@babel/plugin-transform-runtime": "^7.2.0"
+  },
+  "directories": {
+    "lib": "lib",
+    "src": "src"
   }
 }
