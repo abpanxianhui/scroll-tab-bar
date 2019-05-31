@@ -75,6 +75,6 @@ new Vue({
 | Prop  | Default  | Type | Description |
 | :------------ |:---------------:| :---------------:| :-----|
 | current-select | 0 | `number` | 控制切换到某个scroll-tab-col页 |
-| touch-delay | 0 | `number` | 页面切换的延迟时间 |
+| touch-delay | 0.3 | `number` | 页面切换的延迟时间 |
 
 
