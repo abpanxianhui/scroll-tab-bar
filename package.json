@@ -1,5 +1,5 @@
 {
-  "name": "select-date",
+  "name": "scroll-tab",
   "version": "0.0.1",
   "description": "移动端滑动切换菜单栏",
   "main": "lib/index.js",
@@ -37,7 +37,7 @@
     "vue-loader": "^15.5.1",
     "vue-template-compiler": "^2.5.22",
     "webpack": "^4.28.4",
-    "webpack-cli": "^3.2.1",
+    "webpack-cli": "^3.3.2",
     "webpack-dev-server": "^3.1.14",
     "webpack-merge": "^4.2.1"
   },
