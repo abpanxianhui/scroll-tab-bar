@@ -1,5 +1,6 @@
 const path  =  require('path');
 const glob = require("glob-all");
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
 const merge = require('webpack-merge');
 const PurifyCSS = require("purifycss-webpack");
 const base = require('./webpack.config.base')
@@ -10,7 +11,7 @@ const config = {
     output: {
         filename: 'index.js',
         path: path.resolve(__dirname,'../lib'),
-        library: "selectDate",
+        library: "scroll-tab-bar",
         libraryTarget: "umd",
     },
     module: {
@@ -31,7 +32,8 @@ const config = {
                 path.resolve(__dirname, "../src/components/*.vue")
             ]),
             minimize: true
-        })
+        }),
+        new UglifyJSPlugin()
     ]
 }
 
