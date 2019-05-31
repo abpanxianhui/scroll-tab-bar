@@ -1,7 +1,7 @@
 ## scroll-tab-bar文档
 
 ### 组件介绍
-移动端滑动切换菜单栏组件，简单易用，一秒实现移动端滑动切换效果，与swiper组件不同的是，该组件主要用来做滑动切换页面，支持动态修改页面，动态撑开高度，兼容ios/Android，良好的页面性能。
+ 移动端滑动切换菜单栏组件，简单易用，一秒实现移动端滑动切换效果，与swiper组件不同的是，该组件主要用来做滑动切换页面，支持动态修改页面，动态撑开高度，兼容ios/Android，良好的页面性能。
 
 ### npm安装
 
@@ -39,7 +39,7 @@ new Vue({
             <li class="label-list-item" :class="{'select-label-list-item': index === 4}" @click="index = 4">5</li>
         </ul>
         # 外层组件
-        <scroll-tab :current-select="index" @selectChange="handleSelectChange">
+        <scroll-tab :current-select="index" :touch-delay="0.3" @selectChange="handleSelectChange">
             # 被切换的页面组件
             <scroll-tab-col class="item"><div class="item1">1</div></scroll-tab-col>
             <scroll-tab-col class="item"><div class="item2">2</div></scroll-tab-col>
@@ -75,10 +75,6 @@ new Vue({
 | Prop  | Default  | Type | Description |
 | :------------ |:---------------:| :---------------:| :-----|
 | current-select | 0 | `number` | 控制切换到某个scroll-tab-col页 |
-| loop | true | `bool` | Set to `false` to disable continuous loop mode. |
-| index | 0 | `number` | Index number of initial slide. |
-| showsButtons | false | `bool` | Set to `true` make control buttons visible. |
-| autoplay | false | `bool` | Set to `true` enable auto play mode. |
-| onIndexChanged | (index) => null | `func` | Called with the new index when the user swiped |
+| touch-delay | 0 | `number` | 页面切换的延迟时间 |
 
 
