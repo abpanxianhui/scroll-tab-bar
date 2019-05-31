@@ -1,0 +1,16 @@
+{
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+                "targets": {
+                    "chrome": "58",
+                    "ie": "6"
+                },
+                "useBuiltIns": "usage",
+                "modules": false
+            }
+        ]
+    ],
+    "plugins": ["@babel/plugin-transform-runtime"]
+}
