@@ -6,5 +6,7 @@
 ### npm安装
 
 ~~~
-
+npm i scroll-tab-bar --save
 ~~~
+
+### 
